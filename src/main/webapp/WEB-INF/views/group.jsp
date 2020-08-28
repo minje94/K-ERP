@@ -12,7 +12,7 @@
     <meta name="author" content="">
     
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="${pageContext.request.contextPath}/resources/checkmateimg/checkmate_logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="${pageContext.request.contextPath}/resources/checkmateimg/groupware_logo.png">
     <title>Check&Mate - Group</title>
     
     <!-- Custom CSS -->
@@ -73,7 +73,7 @@
             <!-- 그룹생성입니다. -->
             <div class="text-center p-t-20 p-b-20">
                <span class="db"><img
-                  src="${pageContext.request.contextPath}/resources/checkmateimg/logo_transparent.png"
+                  src="${pageContext.request.contextPath}/resources/checkmateimg/logo_groupware.png"
                   height="200" width="200" alt="logo" /></span>
             </div>
 
