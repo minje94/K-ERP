@@ -139,8 +139,8 @@ $(function(){
                         <div class="row border-top border-secondary">
                             <div class="col-12">
                                 <div class="form-group">
-                                    <div class="p-t-20">
-                                        <button class="btn btn-danger" id="to-register" type="button"><i class="fa fa-user-plus m-r-5"></i> 회원가입</button>
+                                    <div class="p-t-20"><!-- 
+                                        <button class="btn btn-danger" id="to-register" type="button"><i class="fa fa-user-plus m-r-5"></i> 회원가입</button> -->
                                         <button class="btn btn-success float-right" name = "submit" id = "submit" type="submit">로그인</button>
                                     </div>
                                 </div>
@@ -148,7 +148,7 @@ $(function(){
                             
                             
                             <!-- 소셜 로그인 -->
-                             <div>
+<%--                              <div>
                                 <!-- 네이버 로그인 창으로 이동 -->
                                 <div id="naver_id_login" style="text-align:center">
                                 <a href="${url}">
@@ -162,7 +162,7 @@ $(function(){
                                         <img width="380" height="76" src="${pageContext.request.contextPath}/resources/checkmateimg/kakaologin.png">
                                         </a>
                                 </div>
-                             </div>
+                             </div> --%>
                             
                             
                             
@@ -269,8 +269,8 @@ $(function(){
                                 
                                 <div class="col-12">
                                     <a class="btn btn-success" href="#" id="to-login" name="action">돌아가기</a>
-                                    <button class="btn btn-info float-right" type="button" id = "mailAuthBtn" value="0">인증메일발송</button>
-                                    <button class="btn btn-info float-right" type="submit" name = "submit" id = "submit-r" >회원가입</button>
+                                    <button class="btn btn-info float-right" type="button" id = "mailAuthBtn" value="0">인증메일발송</button><!-- 
+                                    <button class="btn btn-info float-right" type="submit" name = "submit" id = "submit-r" >회원가입</button> -->
                                 </div>
                             </div>
                     </form>

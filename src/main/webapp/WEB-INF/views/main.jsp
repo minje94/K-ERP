@@ -12,7 +12,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="${pageContext.request.contextPath}/resources/checkmateimg/checkmate_logo.png">
-    <title>Check&Mate</title>
+    <title>N-Groupware</title>
     <!-- Custom CSS -->
     <link href="${pageContext.request.contextPath}/resources/template/assets/libs/flot/css/float-chart.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -114,7 +114,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <div class="row">
-                                <h4 class="card-title m-b-0">숙제</h4>
+                                <h4 class="card-title m-b-0">프로젝트</h4>
                                      <div class="ml-auto">
                                         <div class="tetx-right">
                                         <a href="homeworklist" data-toggle="tooltip" data-placement="top" title="" data-original-title="더보기">
@@ -131,7 +131,7 @@
                                 <li class="d-flex no-block card-body">
                                     <i class="fa fa-chess w-30px m-t-5"></i>
                                     <div>
-                                        <a class="m-b-0 font-medium p-0">등록된 숙제가 없습니다.</a>
+                                        <a class="m-b-0 font-medium p-0">등록된 프로젝트가 없습니다.</a>
                                     </div>
                                     <div class="ml-auto">
                                         <div class="tetx-right">
@@ -243,7 +243,7 @@
     
     <script type="text/javascript">
 
-		let sock = new SockJS('http://checknmate.ml/chat/');
+		let sock = new SockJS('http://localhost:8080/ng/chat/');
 		
     	sock.onmessage = onMessage;
     	sock.onclose = onClose;

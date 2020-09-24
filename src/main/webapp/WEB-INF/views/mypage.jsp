@@ -13,7 +13,7 @@
     
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="${pageContext.request.contextPath}/resources/checkmateimg/checkmate_logo.png">
-    <title>Check&Mate</title>
+    <title>N-Groupware</title>
     
     <!-- Custom CSS -->
     <link href="${pageContext.request.contextPath}/resources/template/assets/libs/flot/css/float-chart.css" rel="stylesheet">
@@ -90,7 +90,7 @@
 								<div class="row">
 									<div class="col-lg-3 border-right p-r-0">
 										<div class="card-body border-bottom">
-											<h4 class="card-title m-t-10 text-center">출석&과제 점수표</h4>
+											<h4 class="card-title m-t-10 text-center">현황표</h4>
 										</div>
 										<div class="card-body">
 											<div class="row">
@@ -100,7 +100,7 @@
 												
 													<div id="" class="">
 													
-							<h5 class="card-title text-center">출석 현황</h5>
+							<h5 class="card-title text-center">출근 현황</h5>
                                 
                                 <div class="col-lg-10" style="margin:auto;">
                                 <div class="progress m-t-15" style="height:30px;">
@@ -111,15 +111,15 @@
 													<hr>
 														<div class="calendar-events m-b-20"
 															data-class="bg-primary">
-															<i class="fa fa-circle text-primary m-r-10"></i>출석 진행 중
+															<i class="fa fa-circle text-primary m-r-10"></i>출근 등록 가능 시간
 														</div>
 														<div class="calendar-events m-b-20"
 															data-class="bg-success">
-															<i class="fa fa-circle text-success m-r-10"></i>출석 완료 <a
+															<i class="fa fa-circle text-success m-r-10"></i>출근 <a
 																style="float: right;" id="attendOk"></a>
 														</div>
 														<div class="calendar-events m-b-20" data-class="bg-danger">
-															<i class="fa fa-circle text-danger m-r-10"></i>결석 <a
+															<i class="fa fa-circle text-danger m-r-10"></i>결근 <a
 																style="float: right;" id="attendNo"></a>
 														</div>
 														<div class="calendar-events m-b-20"
@@ -129,7 +129,7 @@
 														</div>
 														<hr>
 														
-														<h5 class="card-title text-center">과제 현황</h5>
+														<h5 class="card-title text-center">프로젝트 현황</h5>
 														
 														<div class="col-lg-10" style="margin:auto;">
 														<div class="progress m-t-15" style="height:30px;">
@@ -140,15 +140,15 @@
 													<hr>
 														<div class="calendar-events m-b-20"
 															data-class="bg-primary">
-															<i class="fa fa-circle text-secondary m-r-10"></i>과제 진행 중
+															<i class="fa fa-circle text-secondary m-r-10"></i>업무 보고 등록 기간
 														</div>
 														<div class="calendar-events m-b-20"
 															data-class="bg-success">
-															<i class="fa fa-circle text-info m-r-10"></i>과제 제출 완료 <a
+															<i class="fa fa-circle text-info m-r-10"></i>업무 보고 제출 완료 <a
 																style="float: right;" id="hwFinished"></a>
 														</div>
 														<div class="calendar-events m-b-20" data-class="bg-danger">
-															<i class="fa fa-circle text-dark m-r-10"></i>과제 미제출 <a
+															<i class="fa fa-circle text-dark m-r-10"></i>업무 보고 미제출 <a
 																style="float: right;" id="hwUnFinished"></a>
 														</div>
 														<hr>
@@ -162,7 +162,7 @@
 													
 													
 													
-														<h4 class="alert-heading text-center">순위표</h4>
+														<h4 class="alert-heading text-center">우수직원</h4>
 														<hr>
 														
 														
@@ -199,7 +199,7 @@
 
 													<div class="card">
 														<div class="card-body border-top">
-															<h5 class="card-title text-center checkmate-text" id="totalProgressTitle">수료까지...</h5>
+															<h5 class="card-title text-center checkmate-text" id="totalProgressTitle">종료까지...</h5>
 
 															<div class="col-lg-14" style="margin: auto;">
 																<div class="progress m-t-15" style="height: 70px;">
