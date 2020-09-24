@@ -13,7 +13,7 @@
     
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="${pageContext.request.contextPath}/resources/checkmateimg/checkmate_logo.png">
-    <title>과제제출페이지</title>
+    <title>업무보고</title>
     
     <!-- Custom CSS -->
     <link href="${pageContext.request.contextPath}/resources/template/assets/libs/flot/css/float-chart.css" rel="stylesheet">
@@ -67,7 +67,7 @@
                         	<div id="hwForm">
                             
                                 <div class="card-body">
-                                    <h4 class="card-title">과제</h4>
+                                    <h4 class="card-title">업무 보고 현황</h4>
                                     <div class="form-group row">
                                         <label for="h_title" class="col-sm-2 text-right control-label col-form-label">제목</label>
                                         <div class="col-sm-9">
@@ -88,13 +88,13 @@
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="h_score" class="col-sm-2 text-right control-label col-form-label">배점</label>
+                                        <label for="h_score" class="col-sm-2 text-right control-label col-form-label">완성도</label>
                                         <div class="col-sm-9">
                                             <input type="number" class="form-control" id="hwScore" value="${homework.h_score}" readonly>
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="h_content" class="col-sm-2 text-right control-label col-form-label">과제설명</label>
+                                        <label for="h_content" class="col-sm-2 text-right control-label col-form-label">설명</label>
                                         <div class="col-sm-9">
                                             <textarea class="form-control" rows="6" cols="60" readonly>${homework.h_content}</textarea>
                                         </div>
@@ -126,7 +126,7 @@
                         	<form id="submitForm" method="post" enctype="multipart/form-data">
                         	<div>
                             <div class="card-body">
-                                <h4 class="card-title">과제제출</h4>
+                                <h4 class="card-title">업무 제출</h4>
                                 <!-- Create the Quill editor container -->
             						<div class="form-group row">
 		                            	<label for="fno" class="col-sm-2 text-right control-label col-form-label">번호</label>
@@ -170,7 +170,7 @@
                         <div class="card">
                         	<div id="completeForm">
                             <div class="card-body">
-                                <h4 class="card-title">과제제출</h4>
+                                <h4 class="card-title">업무 제출</h4>
                                 <!-- Create the Quill editor container -->
             						<div class="form-group row">
 		                            	<label for="fno" class="col-sm-2 text-right control-label col-form-label">번호</label>

@@ -45,34 +45,57 @@ public class MainController {
 
 		GroupVO groupVO = (GroupVO) session.getAttribute("group");
 
-		// 그룹 선택안하면 로그인 창으로
-		if (groupVO == null) {
-			return "redirect:checkmate";
-		}
+		/*
+		 * // 그룹 선택안하면 로그인 창으로 if (groupVO == null) { return "redirect:checkmate"; }
+		 */
+		
+		
+		
+		
+		
+		
+		
+		
+		
 
-		int noticeListCount = noticeService.noticeListCount(groupVO);
+		/*
+		 * int noticeListCount = noticeService.noticeListCount(groupVO);
+		 * 
+		 * if (noticeListCount == 0) { model.addAttribute("noticeIsNull", 1); } else {
+		 * List<NoticeVO> noticeList = noticeService.noticeListMini(groupVO);
+		 * model.addAttribute("noticeIsNull", 0); model.addAttribute("noticeList",
+		 * noticeList); logger.info("noticeisNull : 0"); }
+		 * 
+		 * int homeworkListCount = homeworkService.homeworkListCount(groupVO);
+		 * 
+		 * logger.info(Integer.toString(homeworkListCount));
+		 * 
+		 * if (homeworkListCount == 0) { model.addAttribute("homeworkIsNull", 1); } else
+		 * { List<HomeworkVO> homeworkList = homeworkService.homeworkListMini(groupVO);
+		 * model.addAttribute("homeworkIsNull", 0); model.addAttribute("homeworkList",
+		 * homeworkList); }
+		 */
+		
+		
+		
+		
+		
+		
+		
+		model.addAttribute("noticeIsNull", 1);
+		
+		model.addAttribute("homeworkIsNull", 1);
 
-		if (noticeListCount == 0) {
-			model.addAttribute("noticeIsNull", 1);
-		} else {
-			List<NoticeVO> noticeList = noticeService.noticeListMini(groupVO);
-			model.addAttribute("noticeIsNull", 0);
-			model.addAttribute("noticeList", noticeList);
-			logger.info("noticeisNull : 0");
-		}
-
-		int homeworkListCount = homeworkService.homeworkListCount(groupVO);
-
-		logger.info(Integer.toString(homeworkListCount));
-
-		if (homeworkListCount == 0) {
-			model.addAttribute("homeworkIsNull", 1);
-		} else {
-			List<HomeworkVO> homeworkList = homeworkService.homeworkListMini(groupVO);
-			model.addAttribute("homeworkIsNull", 0);
-			model.addAttribute("homeworkList", homeworkList);
-		}
-
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		return "main";
 	}
 

@@ -20,7 +20,7 @@
     
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="${pageContext.request.contextPath}/resources/checkmateimg/checkmate_logo.png">
-    <title>과제제출페이지</title>
+    <title>업무 보고 페이지</title>
     
     <!-- Custom CSS -->
     <link href="${pageContext.request.contextPath}/resources/template/assets/libs/flot/css/float-chart.css" rel="stylesheet">
@@ -79,7 +79,7 @@ cursor:pointer;
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title m-b-0">과제</h5>
+                                <h5 class="card-title m-b-0">업무 보고</h5>
                             </div>
                             <table class="table" id="listTable" width="100%" cellspacing="0">
                                   <thead class="thead-light">
@@ -103,7 +103,7 @@ cursor:pointer;
                         <div class="card">
                         	<form id="addForm" method="post" enctype="multipart/form-data">
                                 <div class="card-body">
-                                    <h4 class="card-title">과제등록</h4>
+                                    <h4 class="card-title">업무 등록</h4>
                                     <div class="form-group row">
                                         <label for="h_title" class="col-sm-2 text-right control-label col-form-label">제목</label>
                                         <div class="col-sm-9">
@@ -117,13 +117,13 @@ cursor:pointer;
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="h_score" class="col-sm-2 text-right control-label col-form-label">배점</label>
+                                        <label for="h_score" class="col-sm-2 text-right control-label col-form-label">완성도</label>
                                         <div class="col-sm-9">
-                                            <input type="number" class="form-control" id="h_score" placeholder="배점을 입력하세요">
+                                            <input type="number" class="form-control" id="h_score" placeholder="완성도를 입력하세요">
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="h_content" class="col-sm-2 text-right control-label col-form-label">과제설명</label>
+                                        <label for="h_content" class="col-sm-2 text-right control-label col-form-label">설명</label>
                                         <div class="col-sm-9">
                                             <textarea class="form-control" rows="6" cols="60" id="h_content" name="h_content" autocomplete="off"></textarea>
                                         </div>
@@ -149,7 +149,7 @@ cursor:pointer;
                  <div style="display:none;">
                  	<input type="number" id="noticeToggle" value="0">
                  </div>
-                 <a class="btn btn-success" id="noticeWriteBtn">과제 등록</a>
+                 <a class="btn btn-success" id="noticeWriteBtn">업무 등록</a>
                </div>
                 <!-- ============================================================== -->
                 <!-- End Page Content -->
@@ -309,7 +309,7 @@ cursor:pointer;
    		$("#listForm").slideUp();
    		$("#addForm").fadeIn();
    	} else {
-   		$(this).text("과제 작성");
+   		$(this).text("업무 작성");
    		hwlisttable();
    		$("#noticeToggle").val(0);
         $("#addForm").hide();
@@ -350,7 +350,7 @@ cursor:pointer;
     		success : function(msg){
     			alert(msg);
     			
-    			$('#noticeWriteBtn').text("과제 등록");
+    			$('#noticeWriteBtn').text("업무 등록");
     			hwlisttable();
     			$("#noticeToggle").val(0);
     			$('#h_title').val("");
