@@ -12,7 +12,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="${pageContext.request.contextPath}/resources/checkmateimg/checkmate_logo.png">
-    <title>N-Groupware</title>
+    <title> N-Groupware</title>
     <!-- Custom CSS -->
     <link href="${pageContext.request.contextPath}/resources/template/assets/libs/flot/css/float-chart.css" rel="stylesheet">
     <!-- Custom CSS -->
