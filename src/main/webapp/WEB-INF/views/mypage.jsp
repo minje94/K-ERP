@@ -129,7 +129,7 @@
 														</div>
 														<hr>
 														
-														<h5 class="card-title text-center">프로젝트 현황</h5>
+														<h5 class="card-title text-center">업무 현황</h5>
 														
 														<div class="col-lg-10" style="margin:auto;">
 														<div class="progress m-t-15" style="height:30px;">

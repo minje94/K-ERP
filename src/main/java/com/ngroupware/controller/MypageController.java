@@ -91,7 +91,7 @@ public class MypageController {
 
 			CalendarVO calendarAttendVO = new CalendarVO();
 			
-			calendarAttendVO.setTitle("출석 진행 중");
+			calendarAttendVO.setTitle("출근 진행 중");
 			calendarAttendVO.setColor("#7460ee");
 			calendarAttendVO.setUrl("attend");
 			
@@ -103,7 +103,7 @@ public class MypageController {
 
 			CalendarVO calendarAttendVO = new CalendarVO();
 			
-			calendarAttendVO.setTitle("출석 완료");
+			calendarAttendVO.setTitle("출근 완료");
 			calendarAttendVO.setColor("#28b779");
 			calendarAttendVO.setUrl("attend");
 			
@@ -127,7 +127,7 @@ public class MypageController {
 
 			CalendarVO calendarAttendVO = new CalendarVO();
 			
-			calendarAttendVO.setTitle("결석");
+			calendarAttendVO.setTitle("결근");
 			calendarAttendVO.setColor("#da542e");
 			calendarAttendVO.setUrl("attend");
 			

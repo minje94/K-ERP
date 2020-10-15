@@ -68,7 +68,7 @@
 						<div class="card">
 							<div class="card-body">
 								<div class="row">
-									<h4 class="card-title m-b-0">출석</h4>
+									<h4 class="card-title m-b-0">출근</h4>
 									<div class="ml-auto">
 										<div class="tetx-right">
 	
@@ -131,7 +131,7 @@
                     <div class="modal-content">
                        	<form class="form-horizontal" id="attendManage">
                        		<div class="modal-header">
-                           		<h4 class="modal-title"><strong><a id="modal_a_date">출석 날짜 (a_date)</a></strong></h4>
+                           		<h4 class="modal-title"><strong><a id="modal_a_date">출근 날짜 (a_date)</a></strong></h4>
                             	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                         	</div>
                         	<div class="modal-body">
@@ -141,8 +141,8 @@
 			                                <thead class="thead-light">
 			                                    <tr>
 			                                      	<th>이름</th>
-			                                      	<th>출석여부</th>
-			                                      	<th>출석수정</th>
+			                                      	<th>출근여부</th>
+			                                      	<th>출근수정</th>
 		                                    	</tr>
 			                                </thead>
 			                                <tbody id = "tbody">
@@ -294,7 +294,7 @@
 								htmls += this.a_date;
 								htmls += "</h6>";
 								htmls += "<h6 class='text-white'>";
-								htmls += "출석 중";
+								htmls += "출근 중";
 								htmls += "</h6>";
 								htmls += "</div>";
 								htmls += "</div>";
@@ -316,7 +316,7 @@
 								htmls += this.a_date;
 								htmls += "</h6>";
 								htmls += "<h6 class='text-white'>";
-								htmls += "출석 마감";
+								htmls += "출근 마감";
 								htmls += "</h6>";
 								htmls += "</div>";
 								htmls += "</div>";
@@ -339,7 +339,7 @@
 								htmls += this.a_date;
 								htmls += "</h6>";
 								htmls += "<h6 class='text-white'>";
-								htmls += "출석 중";
+								htmls += "출근 중";
 								htmls += "</h6>";
 								htmls += "</div>";
 								htmls += "</div>";
@@ -357,7 +357,7 @@
 								htmls += this.a_date;
 								htmls += "</h6>";
 								htmls += "<h6 class='text-white'>";
-								htmls += "출석 완료";
+								htmls += "출근 완료";
 								htmls += "</h6>";
 								htmls += "</div>";
 								htmls += "</div>";
@@ -393,7 +393,7 @@
 								htmls += this.a_date;
 								htmls += "</h6>";
 								htmls += "<h6 class='text-white'>";
-								htmls += "결석";
+								htmls += "결근";
 								htmls += "</h6>";
 								htmls += "</div>";
 								htmls += "</div>";
@@ -432,7 +432,7 @@
 				},
 				//Ajax 성공시 호출 
 				success : function(data) {
-					alert("출석이 생성되었습니다.");
+					alert("출근이 생성되었습니다.");
 			 		$("#makeAttend").slideUp();
 			 		
  					attendList();
@@ -486,7 +486,7 @@
 		var a_date = "";
 	
 		function attendClick(deadLine) {
-			var result = confirm("출석체크를 하시겠습니까?");
+			var result = confirm("출근 하시겠습니까?");
 			if(result){
 				$.ajax({
 					url : 'attendClick', // 전송 URL
@@ -509,7 +509,7 @@
 		}
 		
 		function attendDetail(date) {
-			var result = confirm("출석현황을 확인하시겠습니까?");
+			var result = confirm("출근현황을 확인하시겠습니까?");
 			a_date = date;
 			
 			if(result){
@@ -526,22 +526,22 @@
 						
 						$(data).each(function(){
 								
-							$("#modal_a_date").text(data[0].a_date + " 출석현황");
+							$("#modal_a_date").text(data[0].a_date + " 출근현황");
 							htmls += "<tr>";
 							htmls += "<th>";
 							htmls += "<input type = 'hidden' name = 'modal_u_id' value='"+ this.u_id+ "'>";
 							htmls += this.u_name;
 							htmls += "</th>";
 							htmls += "<th>";
-							htmls += this.a_flag == 1 ? '출석' : this.a_flag == 2 ? '지각' : '결석';
+							htmls += this.a_flag == 1 ? '출근' : this.a_flag == 2 ? '지각' : '결근';
 							htmls += "</th>";
 							
 							htmls += "<th>";
 							htmls += "<select name = 'model_a_flag'>";
 							htmls += "<option value = '" + this.a_flag + "' selected> 선택 </option>";
-							htmls += "<option value = '1'> 출석 </option> ";
+							htmls += "<option value = '1'> 출근 </option> ";
 							htmls += "<option value = '2'> 지각 </option> ";
-							htmls += "<option value = '3'> 결석 </option> ";
+							htmls += "<option value = '3'> 결근 </option> ";
 							htmls += "</select>";
 							htmls += "</th>";
 							htmls += "</tr>";
